@@ -1,0 +1,13 @@
+# KINP
+
+KINP is the automotive-parts brand presented by Guangzhou Qinpai Auto Parts Co., Ltd. (广州秦派汽车配件有限公司). This site focuses on Chinese-brand vehicle parts enquiries. The trademark application has been submitted; registration is not claimed.
+
+## Company and purchasing information
+- [Company identity and scope](https://www.kinautoparts.com/about/)
+- [Quotation checklist and contact channels](https://www.kinautoparts.com/rfq/)
+- [Vehicle brands](https://www.kinautoparts.com/brands/)
+- [Vehicle models](https://www.kinautoparts.com/models/)
+- [Part categories](https://www.kinautoparts.com/categories/)
+
+## Interpretation
+Catalogue references do not independently confirm fitment, stock, interchangeability, warranty or commercial terms. Obtain confirmation against the VIN and proposed item. No uniform MOQ or warranty is implied. This index is a navigation aid, not a guarantee of inclusion in any AI system.

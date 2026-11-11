@@ -1,0 +1,86 @@
+
+:root{--ink:#1a1d21;--mute:#5c6570;--line:#e3e7ea;--accent:#7B050F;--accent-dark:#7a0d0d;--accent-soft:#fbeaec;--bg:#ffffff;--soft:#faf8f8}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.site{border-bottom:1px solid var(--line);background:#fff}
+header.site .wrap{display:flex;align-items:center;justify-content:flex-start;padding:14px 20px;gap:16px;flex-wrap:wrap}
+.brand{order:1;margin-right:auto;display:flex;flex-direction:column;align-items:flex-start;gap:5px;text-decoration:none}
+.brand:hover{text-decoration:none}
+.brand img{height:38px;width:auto;display:block}
+.brand-flag{font-size:10px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;color:var(--mute);line-height:1;white-space:nowrap}
+nav.top{order:2;margin-left:auto}
+nav.top a{margin-left:18px;color:var(--mute);font-size:15px}
+nav.top a.cta,nav.top a[href="/rfq/"]{color:#fff;background:var(--accent);padding:8px 16px;border-radius:4px}
+nav.top a.cta:hover,nav.top a[href="/rfq/"]:hover{text-decoration:none;background:var(--accent-dark)}
+.hero{background:var(--soft);border-bottom:1px solid var(--line);padding:44px 0}
+.hero h1{font-size:31px;line-height:1.25;margin:0 0 12px;letter-spacing:-.4px}
+.hero p{margin:0;color:var(--mute);font-size:17px;max-width:760px}
+main{padding:34px 0 12px}
+h2{font-size:23px;margin:34px 0 12px;letter-spacing:-.2px}
+h3{font-size:17px;margin:22px 0 6px}
+p{margin:0 0 14px}
+ul{margin:0 0 16px;padding-left:22px}
+li{margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px;margin:18px 0 6px}
+.card{border:1px solid var(--line);border-radius:6px;padding:15px 16px;background:#fff}
+.card h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0;font-size:14px;color:var(--mute)}
+.card a{font-weight:600}
+.stats-row{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 4px}
+.stat{flex:1;min-width:130px;background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:13px 16px;text-align:center}
+.stat strong{display:block;font-size:23px;line-height:1.2;letter-spacing:-.3px;color:var(--ink)}
+.stat span{font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.6px}
+.brand-card{display:flex;gap:13px;align-items:flex-start;transition:border-color .15s ease}
+.brand-card:hover{border-color:var(--accent)}
+.brand-mark{flex:0 0 44px;width:44px;height:44px;border-radius:10px;color:#fff;font-weight:600;
+font-size:15px;letter-spacing:.5px;display:flex;align-items:center;justify-content:center;user-select:none}
+.brand-body{min-width:0}
+.brand-card h3{margin:0 0 4px;font-size:16px;line-height:1.3}
+.brand-card p{font-size:13px;line-height:1.5}
+.grp{display:flex;align-items:center;gap:12px;margin:34px 0 12px}
+.grp h2{margin:0;font-size:21px}
+.grp .brand-mark{flex:0 0 38px;width:38px;height:38px;font-size:14px;border-radius:9px}
+.cat-card{display:flex;gap:13px;align-items:flex-start;transition:border-color .15s ease}
+.cat-card:hover{border-color:var(--accent)}
+.cat-mark{flex:0 0 44px;width:44px;height:44px;border-radius:10px;display:flex;
+align-items:center;justify-content:center}
+.cat-mark svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;
+stroke-linecap:round;stroke-linejoin:round}
+table{width:100%;border-collapse:collapse;margin:14px 0 18px;font-size:15px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--soft);font-weight:600}
+.note{background:var(--soft);border-left:3px solid var(--accent);padding:12px 16px;margin:16px 0;font-size:15px}
+.crumbs{font-size:14px;color:var(--mute);margin:0 0 18px}
+.crumbs a{color:var(--mute)}
+.cta-band{background:var(--accent);color:#fff;padding:26px 0;margin:38px 0 0}
+.cta-band h2{color:#fff;margin:0 0 8px}
+.cta-band p{margin:0 0 14px;opacity:.92}
+.cta-band a.btn{display:inline-block;background:#fff;color:var(--accent);font-weight:700;
+padding:11px 24px;border-radius:4px}
+.cta-band a.btn:hover{text-decoration:none;background:var(--accent-soft)}
+footer.site{border-top:1px solid var(--line);margin-top:40px;padding:26px 0;color:var(--mute);font-size:14px}
+footer.site .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer.site a{color:var(--mute);margin-right:14px}
+@media(max-width:640px){.hero h1{font-size:25px}nav.top a{margin-left:12px;font-size:14px}}
+@media(max-width:760px){
+header.site .wrap{padding:12px 20px;row-gap:10px}
+.brand{order:1;width:100%;margin-right:0}
+nav.top{order:2;width:100%;margin-left:0;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+nav.top a{margin:0}
+.brand img{height:28px}
+.brand-flag{font-size:9px;letter-spacing:.5px}
+}
+
+/* KINP brand manual minimum size and clear space */
+.brand{padding:10px;gap:8px}.brand img{height:40px!important;width:auto;max-width:100%;object-fit:contain}.brand-flag{white-space:normal}main a.btn{display:inline-block;padding:12px 18px;background:#7B050F;color:white;border-radius:4px}a:focus-visible{outline:3px solid #7B050F;outline-offset:4px}
+
+#rfq-builder{max-width:760px;background:#f7f7f7;padding:22px;border:1px solid #ddd;border-radius:8px}#rfq-builder label{display:block;margin-bottom:16px;font-weight:600}#rfq-builder input,#rfq-builder textarea{display:block;width:100%;padding:12px;margin-top:6px;border:1px solid #777;border-radius:4px;font:inherit;background:#fff}#rfq-builder button{background:#7B050F;color:#fff;border:0;padding:13px 18px;font:inherit;margin:0 8px 12px 0;cursor:pointer;border-radius:4px}
+
+/* KINP visual refresh: image-led sourcing, 2026-11-10 */
+.wrap{max-width:1240px}.hero-home{background:linear-gradient(90deg,rgba(10,10,13,.94),rgba(10,10,13,.67) 40%,rgba(10,10,13,.06) 75%),url('/assets/banners/chinese-parts-concept.png') center 52%/cover;min-height:590px;padding:94px 0 28px;color:white;border:0}.eyebrow{display:block;font-size:12px;letter-spacing:2px;font-weight:700;margin-bottom:20px}.hero-home h1{font-size:58px;line-height:1.08;letter-spacing:-2px;max-width:650px;margin:0 0 25px}.hero-home p{color:#e2dfe1;font-size:19px;max-width:530px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.hero .btn,.visual-callout .btn{display:inline-block;background:#a90c1c;color:white;padding:14px 22px;border-radius:3px;font-weight:600}.hero .btn-outline{background:transparent;border:1px solid #bbb}.hero-note{display:block;color:#c6bec0;font-size:11px;margin-top:70px}.sourcing-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-bottom:1px solid #ddd;padding:0 0 30px}.sourcing-strip b{display:block;font-size:13px;letter-spacing:1px;color:#7B050F;margin-bottom:8px}.sourcing-strip span{font-size:14px;color:#5c6570}.oe-feature{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;padding:65px 0}.oe-feature h2{font-size:42px;line-height:1.15;margin:0 0 20px}.oe-feature p{max-width:470px}.oe-panel{border-left:5px solid #7B050F;background:#f5f4f4;padding:40px}.oe-panel>span{font-size:12px;letter-spacing:2px;color:#7B050F}.oe-panel strong{display:block;font-size:26px;margin:18px 0}.oe-panel p{font-size:14px}.home-page main h2{margin-top:48px}.home-page .oe-feature h2{margin-top:0}.home-page .card{border-radius:0;border:0;border-bottom:2px solid #ddd;background:#f7f7f7;padding:24px;transition:transform .2s,border-color .2s}.home-page .card:hover{transform:translateY(-3px);border-color:#7B050F}.home-page .card h3{font-size:19px}.home-page .grid{gap:18px;margin-bottom:35px}.home-page .section-intro{color:#5c6570}.visual-callout{margin:65px 0;padding:50px;background:linear-gradient(90deg,#18070ce8,#18070c75),url('/assets/banners/chinese-parts-concept.png') center 65%/cover;color:white}.home-page .visual-callout h2{color:white;font-size:36px;margin:0 0 24px;line-height:1.2}.hero-section{color:white;background:linear-gradient(90deg,#16090fee,#16090f85),url('/assets/banners/chinese-parts-concept.png') center 49%/cover;padding:58px 0;min-height:215px}.hero-section h1{font-size:39px;max-width:790px}.hero-section p{color:#eee;max-width:730px}.hero-port{background-image:linear-gradient(90deg,#0d1522ee,#0d152288),url('/assets/banners/export-port.jpg')}.cta-band{background:#1b1013;padding:45px 0}.cta-band h2{font-size:30px}footer.site{background:#f7f7f7}.home-page main{padding-top:30px}
+@media(max-width:760px){.hero-home{min-height:650px;padding:46px 0 22px;background-position:62% center;background-image:linear-gradient(180deg,#0c090def 0%,#0c090dc9 43%,#0c090d33 90%),url('/assets/banners/chinese-parts-concept.png')}.hero-home h1{font-size:40px;letter-spacing:-1px}.hero-home p{font-size:17px}.hero-note{margin-top:170px;font-size:10px}.hero-actions{gap:10px}.hero .btn{padding:12px 15px;font-size:14px}.eyebrow{font-size:10px;letter-spacing:1.4px}.sourcing-strip{grid-template-columns:1fr;gap:18px}.oe-feature{grid-template-columns:1fr;gap:25px;padding:40px 0}.oe-feature h2{font-size:34px}.oe-panel{padding:25px}.oe-panel strong{font-size:23px}.visual-callout{padding:30px 24px}.home-page .visual-callout h2{font-size:29px}.hero-section h1{font-size:30px}.hero-section{padding:40px 0}.home-page .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.home-page .card{padding:17px 13px}.home-page .card h3{font-size:16px}.home-page .card p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.home-page .card{transition:none}}
