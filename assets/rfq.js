@@ -7,7 +7,7 @@
     event.preventDefault();
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    const fields = [['Reference or part description','reference'],['Vehicle and model year','vehicle'],['Quantity','quantity'],['Destination','destination'],['Additional identification details','details']];
+    const fields = [['Name','name'],['Email','email'],['Company','company'],['WhatsApp / phone','phone'],['Reference or part description','reference'],['Vehicle and model year','vehicle'],['Quantity','quantity'],['Destination','destination'],['Additional identification details','details']];
     const message = 'KINP parts quotation request\n' + fields.map(([label,key]) => label+': '+String(data.get(key)||'').trim()).join('\n');
     const channel = event.submitter?.value || 'email';
     const link = channel === 'whatsapp'
